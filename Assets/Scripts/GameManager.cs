@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public CardInfo[] cardPool;
     public GameObject card;
     public GameObject puzzleField;
-    //public GameObject winPanel;
+    public GameObject winPanel;
     private List<GameObject> cards = new List<GameObject>();
     private List<Button> buttons = new List<Button>();
     private int index;
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
         if (matches == totalMatches)
         {
             print("Win");
-            //winPanel.gameObject.SetActive(true);
+            winPanel.gameObject.SetActive(true);
         }
     }
 }
